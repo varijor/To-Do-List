@@ -1,0 +1,152 @@
+.container {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    padding: 20px;
+    box-sizing: border-box;
+}
+h1,h2 {
+    text-align: center;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.existing-todos {
+    margin-bottom: 20px;
+}
+.existing-todo {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out; 
+    height: fit-content;
+    min-height: 100px;
+    min-width: 170px;
+}
+
+.existing-todo:hover {
+    background-color: #f5f5f5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.existing-todo:hover .existing-todo-title,
+.existing-todo:hover .existing-todo-description,
+.existing-todo:hover .existing-todo-due-date {
+    display: none;
+}
+
+.existing-todo-edit,
+.existing-todo-complete {
+    display: block;
+    padding: 5px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; 
+}
+
+.existing-todo-edit:hover,
+.existing-todo-complete:hover {
+    background-color: #000;
+}
+
+.existing-todo:hover .existing-todo-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease;
+    min-height: inherit;
+}
+
+.existing-todo-actions {
+    display: none;
+}
+
+.existing-todo-actions button {
+    margin: 0 5px;
+}
+
+.existing-todo-edit,
+.existing-todo-complete {
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.existing-todo-edit {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+}
+
+.existing-todo-complete {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+}
+
+.existing-todo-edit:hover,
+.existing-todo-complete:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.existing-todo-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+.existing-todo-description {
+    margin-bottom: 5px;
+}
+.existing-todo-due-date {
+    color: #999;
+    font-size: 0.8em;
+}
+.form-group {
+    margin-bottom: 10px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+input[type="text"],
+textarea,
+input[type="datetime-local"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+button[type="submit"] {
+    background-color: #428bca;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+button[type="submit"]:hover {
+    background-color: #3071a9;
+}
+
+textarea {
+    resize: none;
+  }
